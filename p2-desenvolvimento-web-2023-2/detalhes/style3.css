@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url("https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blte26fe1300d81bb9d/61c222da807fe24063918fd6/34361776730_3fc7a19e14_o.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: background-size 0.5s ease-in-out;
+}
+
+#detalhes-jogador {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 1; 
+}
+
+#detalhes-jogador img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#detalhes-jogador p {
+    margin: 10px 0;
+}
+
+#voltar {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#voltar:hover {
+    background-color: #2980b9;
+}
+
+#button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

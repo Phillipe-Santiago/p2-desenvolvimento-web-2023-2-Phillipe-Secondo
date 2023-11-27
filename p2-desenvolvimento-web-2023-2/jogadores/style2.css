@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    top: 0;
+}
+
+.background-image {
+    background-image: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blte26fe1300d81bb9d/61c222da807fe24063918fd6/34361776730_3fc7a19e14_o.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#atletas-container {
+    position: relative;
+    margin-top: 80px;
+    column-count: 4;
+    column-gap: 1em;
+    text-align: center;
+}
+
+#atletas-container article {
+    display: inline-block;
+    width: calc(25% - 0.5em);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 3px solid;
+}
+
+@media only screen and (max-width: 900px) {
+    #atletas-container article button {
+        display: block; 
+        margin: 10px auto; 
+    }
+}
+
+
+#footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+#footer img {
+    width: 50px;
+    height: 50px;
+}
+
+#Seletor,
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+#Seletor {
+    background-color: #333;
+    color: white;
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #atletas-container {
+        column-count: 1;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    button {
+        display: none;
+    }
+
+    #Seletor {
+        display: block;
+    }
+
+    #atletas-container {
+        margin-top: 120px;
+    }
+
+    #Seletor,
+    button {
+        flex: 100%;
+        margin: 5px 0;
+    }
+}

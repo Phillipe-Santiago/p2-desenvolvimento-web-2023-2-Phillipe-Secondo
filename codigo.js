@@ -215,12 +215,12 @@ function todos() {
 
 function abrirDetalhes(atleta) {
     localStorage.setItem('atletaSelecionado', JSON.stringify(atleta));
-    window.location.href = "../detalhes/detalhes.html";
+    window.location.href = "detalhes.html";
 }
 
 function sair() {
     localStorage.removeItem("senha");
-    window.location.href = "../../";
+    window.location.href = "index.html";
 }
 
 document.getElementById('Seletor').addEventListener('change', function () {

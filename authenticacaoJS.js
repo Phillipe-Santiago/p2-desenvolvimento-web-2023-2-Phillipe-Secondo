@@ -10,7 +10,7 @@ function entrar() {
     const hashedPassword = hex_md5(password);
     if (username === 'Botafogo' && hashedPassword === 'e94e05e674b44d25dd604294991304d7') {
 
-        window.location.href = '../jogadores/index.html';
+        window.location.href = '../p2-desenvolvimento-web-2023-2/jogadores/jogador.html';
         localStorage.setItem('senha', password)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
     } else {

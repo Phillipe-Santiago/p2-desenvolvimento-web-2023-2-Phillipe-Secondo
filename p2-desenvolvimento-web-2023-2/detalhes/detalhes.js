@@ -63,5 +63,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function voltar() {
     localStorage.removeItem('atletaSelecionado');
-    window.location.href = '../jogadores/index.html';  
+    window.location.href = '../jogadores/jogador.html';  
 }

@@ -215,12 +215,12 @@ function todos() {
 
 function abrirDetalhes(atleta) {
     localStorage.setItem('atletaSelecionado', JSON.stringify(atleta));
-    window.location.href = "../p2-desenvolvimento-web-2023-2/detalhes/detalhes.html";
+    window.location.href = "../detalhes/detalhes.html";
 }
 
 function sair() {
     localStorage.removeItem("senha");
-    window.location.href = "p2-desenvolvimento-web-2023-2\auth\autenticacao.html";
+    window.location.href = "../../";
 }
 
 document.getElementById('Seletor').addEventListener('change', function () {
